@@ -1,1 +1,1 @@
-# <a href="https://followhappyq.github.io/cart/" target="_blank">demo </a>
+# <a href="https://followhappyq.github.io/cart/">demo </a>
