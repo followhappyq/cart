@@ -1,0 +1,130 @@
+[
+  {
+    "id": 1,
+    "title": "Normal People: A Novel",
+    "author": "Sally Rooney",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/51YLvw6M0NL._SX322_BO1,204,203,200_.jpg",
+    "price": 11.99,
+    "rating": 4
+  },
+  {
+    "id": 2,
+    "title": "Educated: A Memoir",
+    "author": "Tara Westover",
+    "image": "https://images-na.ssl-images-amazon.com/images/I/41%2BaN7ZbS9L._SX327_BO1,204,203,200_.jpg",
+    "price": 14.99,
+    "rating": 4
+  },
+  {
+    "id": 3,
+    "title": "Chosen Ones: The new novel from NEW YORK TIMES best-selling author Veronica Roth",
+    "author": "Veronica Rooth",
+    "image": "https://m.media-amazon.com/images/I/51t+k-0OXiL.jpg",
+    "price": 15.74,
+    "rating": 3
+  },
+  {
+    "id": 4,
+    "title": "The Last Book on the Left: Stories of Murder and Mayhem from History's Most Notorious Serial Killers",
+    "author": "Ben Kissel",
+    "image": "https://m.media-amazon.com/images/I/613zJ+CZnyL.jpg",
+    "price": 22.68,
+    "rating": 5
+  },
+  {
+    "id": 5,
+    "title": "Simply Living Well: A Guide to Creating a Natural, Low-Waste Home",
+    "author": "Julia Watkins",
+    "image": "https://m.media-amazon.com/images/I/51kWjkxXQmL.jpg",
+    "price": 12.99,
+    "rating": 5
+  },
+  {
+    "id": 6,
+    "title": "In Praise of Walking: A New Scientific Exploration",
+    "author": "Shane O'Mara",
+    "image": "https://m.media-amazon.com/images/I/41uXoogpV8L.jpg",
+    "price": 25.95,
+    "rating": 4
+  },
+  {
+    "id": 7,
+    "title": "Fire in Paradise: An American Tragedy",
+    "author": "Alastar Gee",
+    "image": "https://m.media-amazon.com/images/I/41jS-JSpaIL.jpg",
+    "price": 13.64,
+    "rating": 4
+  },
+  {
+    "id": 8,
+    "title": "Hello, Summer",
+    "author": "Mary Kay Andrews",
+    "image": "https://m.media-amazon.com/images/I/51kSJcILLkL.jpg",
+    "price": 13.22,
+    "rating": 4
+  },
+  {
+    "id": 9,
+    "title": "Hard Cash Valley: A Novel",
+    "author": "Brian Panowich",
+    "image": "https://m.media-amazon.com/images/I/51+2PyrSohL.jpg",
+    "price": 14.69,
+    "rating": 3
+  },
+  {
+    "id": 10,
+    "title": "Then She Vanished (A Roland Ford Novel Book 4)",
+    "author": "T. Jefferson Parker",
+    "image": "https://m.media-amazon.com/images/I/51evPuc6vWL.jpg",
+    "price": 14.69,
+    "rating": 5
+  },
+  {
+    "id": 11,
+    "title": "The Unwilling: A Novel",
+    "author": "John Hart",
+    "image": "https://m.media-amazon.com/images/I/41vRjFP2jyL.jpg",
+    "price": 15.74,
+    "rating": 4
+  },
+  {
+    "id": 12,
+    "title": "Bull Mountain",
+    "author": "Brian Panowich",
+    "image": "https://m.media-amazon.com/images/I/414a2QvLy5L.jpg",
+    "price": 13.64,
+    "rating": 4
+  },
+  {
+    "id": 13,
+    "title": "Like Lions",
+    "author": "Brian Panowich",
+    "image": "https://m.media-amazon.com/images/I/51xMQK-IkyL.jpg",
+    "price": 10.49,
+    "rating": 4
+  },
+  {
+    "id": 14,
+    "title": "When These Mountains Burn",
+    "author": "David Joy",
+    "image": "https://m.media-amazon.com/images/I/51FSCo8VOML.jpg",
+    "price": 14.69,
+    "rating": 5
+  },
+  {
+    "id": 15,
+    "title": "The Revelators (A Quinn Colson Novel Book 10)",
+    "author": "Ace Atkins",
+    "image": "https://m.media-amazon.com/images/I/51aaPUYiVbL.jpg",
+    "price": 13.32,
+    "rating": 4
+  },
+  {
+    "id": 16,
+    "title": "The Broken King: A McFalls County Story",
+    "author": "Brian Panowich",
+    "image": "https://m.media-amazon.com/images/I/51w7emAek6L.jpg",
+    "price": 1.04,
+    "rating": 4
+  }
+]

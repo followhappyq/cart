@@ -1,18 +1,19 @@
 const initialState = {
-  books: [{ id: "1", title: "abc" }],
+  items: null,
+  filterBy: "all",
 }
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case "BOOKS:ADD_BOOKS":
-      return {
-        ...state,
-        books: payload,
-      }
     case "BOOKS:SET_BOOKS":
       return {
         ...state,
-        books: payload,
+        items: payload,
+      }
+    case "BOOKS:SET_FILTER":
+      return {
+        ...state,
+        filterBy: payload,
       }
 
     default:
