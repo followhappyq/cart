@@ -1,7 +1,7 @@
 import React from "react"
-import { Card, Image, Rating } from "semantic-ui-react"
+import { Card, Image, Rating, Button } from "semantic-ui-react"
 
-const BaseCard = ({ book }) => {
+const BaseCard = ({ book, onAddToCart, addedCount }) => {
   return (
     <Card key={Math.random()}>
       <Image src={book.image} wrapped ui={false} />
@@ -15,6 +15,9 @@ const BaseCard = ({ book }) => {
       <Card.Content extra>
         <Rating defaultRating={book.rating} maxRating={5} disabled />
       </Card.Content>
+      <Button onClick={onAddToCart}>
+        Add to cart{addedCount > 0 && `(${addedCount})`}
+      </Button>
     </Card>
   )
 }

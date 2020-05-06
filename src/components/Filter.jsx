@@ -1,7 +1,7 @@
 import React from "react"
 import { Input, Menu } from "semantic-ui-react"
 
-const Filter = ({ activeItem, handleItemClick }) => {
+const Filter = ({ activeItem, handleItemClick, query, setQuery }) => {
   return (
     <Menu secondary>
       <Menu.Item
@@ -42,7 +42,12 @@ const Filter = ({ activeItem, handleItemClick }) => {
         Author
       </Menu.Item>
       <Menu.Item>
-        <Input icon="search" placeholder="Search books..." />
+        <Input
+          icon="search"
+          placeholder="Search books..."
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
       </Menu.Item>
     </Menu>
   )

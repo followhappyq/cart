@@ -1,26 +1,35 @@
-import React from "react"
-import { Menu } from "semantic-ui-react"
+import React, { Fragment } from "react"
+import { Menu, Button, Popup } from "semantic-ui-react"
 
 import { Filter } from "../containers"
+import { CartPopup } from "./"
 
-const BaseMenu = ({ activeItem }) => {
+const BaseMenu = ({ count, total, items, removeFromCart }) => {
   return (
-    <Menu>
-      <Menu.Item name="browse" active={activeItem === "browse"}>
-        Shop
-      </Menu.Item>
+    <Fragment>
+      {console.log(removeFromCart)}
+      <Menu>
+        <Menu.Item link>Shop</Menu.Item>
+        <Menu.Menu position="right">
+          <Menu.Item link>
+            Total: <b>${total}</b>
+          </Menu.Item>
+
+          <Menu.Item>
+            <Popup trigger={<Button>Cart ({count})</Button>} flowing hoverable>
+              {items.map((book) => (
+                <CartPopup
+                  key={Math.random()}
+                  book={book}
+                  removeFromCart={removeFromCart}
+                />
+              ))}
+            </Popup>
+          </Menu.Item>
+        </Menu.Menu>
+      </Menu>
       <Filter />
-
-      <Menu.Menu position="right">
-        <Menu.Item name="signup" active={activeItem === "signup"}>
-          Total: <b>$</b>
-        </Menu.Item>
-
-        <Menu.Item name="help" active={activeItem === "help"}>
-          Cart
-        </Menu.Item>
-      </Menu.Menu>
-    </Menu>
+    </Fragment>
   )
 }
 

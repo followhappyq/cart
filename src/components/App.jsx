@@ -1,8 +1,7 @@
 import React from "react"
-
 import { Container, Card } from "semantic-ui-react"
 
-import { Menu, Card as BaseCard } from "./"
+import { Menu, Card as BaseCard } from "../containers"
 import "../styles/app.scss"
 
 const App = ({ books }) => {

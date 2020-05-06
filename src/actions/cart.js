@@ -1,7 +1,11 @@
 const actions = {
-  setBooks: (books) => ({
+  addToCart: (book) => ({
     type: "CART:ADD_BOOK",
-    payload: books,
+    payload: book,
+  }),
+  removeFromCart: (id) => ({
+    type: "CART:REMOVE_BOOK",
+    payload: id,
   }),
 }
 

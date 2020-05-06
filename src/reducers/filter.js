@@ -1,13 +1,19 @@
 const initialState = {
-  items: null,
+  query: "",
+  filterBy: "all",
 }
 
 export default (state = initialState, { type, payload }) => {
   switch (type) {
-    case "BOOKS:SET_BOOKS":
+    case "FILTER:SET_QUERY":
       return {
         ...state,
-        items: payload,
+        query: payload,
+      }
+    case "FILTER:SET_FILTER":
+      return {
+        ...state,
+        filterBy: payload,
       }
 
     default:

@@ -19,10 +19,21 @@ const sortBy = (books, filterBy) => {
     case "author":
       return orderBy(books, "author", "asc")
     case "popular":
-      return orderBy(books, "rating", "asc")
+      return orderBy(books, "rating", "desc")
     default:
-      break
+      return books
   }
+}
+
+const filterBooks = (books, query) =>
+  books.filter(
+    (book) =>
+      book.title.toLowerCase().indexOf(query.toLowerCase()) >= 0 ||
+      book.author.toLowerCase().indexOf(query.toLowerCase()) >= 0
+  )
+
+const searchBooks = (books, filterBy, query) => {
+  return sortBy(filterBooks(books, query), filterBy)
 }
 
 const App = ({ setBooks, books, setFilter }) => {
@@ -42,6 +53,9 @@ const App = ({ setBooks, books, setFilter }) => {
 }
 
 export default connect(
-  ({ books }) => ({ books: sortBy(books.items, books.filterBy) }),
+  ({ books, filter }) => ({
+    books:
+      books.items && searchBooks(books.items, filter.filterBy, filter.query),
+  }),
   booksActions
 )(App)
